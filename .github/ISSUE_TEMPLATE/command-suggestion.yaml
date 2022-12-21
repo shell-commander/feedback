@@ -11,7 +11,7 @@ body:
     attributes:
       value: >-
         Thanks for taking your time to suggest a new command for
-        https://commander.sh!  
+        https://commander.sh  
 
         Please keep in mind that this issue is public and can be viewed by
         everyone.
@@ -49,7 +49,9 @@ body:
     id: command_powershell
     attributes:
       label: PowerShell Command
-      description: If you have a PowerShell command or variation, you can input it here!
+      description: >-
+        If you have a PowerShell command or variation, you can input it here!  
+        Leave empty if you only want to suggest a Bash command.
       placeholder: >-
         docker ps | Select-Object -Skip 1 | ForEach-Object { docker restart
         $_.ID }
@@ -58,8 +60,8 @@ body:
     attributes:
       label: Bash Command
       description: >-
-        If you have a Bash (or bash-like) command or variation, you can input it
-        here!
+        If you have a Bash (or bash-like) command or variation, you can input it here!  
+        Leave empty if you only want to suggest a PowerShell command.
       placeholder: docker restart $(docker ps -q)
   - type: markdown
     attributes:
