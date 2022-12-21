@@ -42,6 +42,9 @@ body:
           required: false
         - label: Windows
           required: false
+  - type: markdown
+    attributes:
+      value: '---'
   - type: input
     id: command_powershell
     attributes:
@@ -58,6 +61,9 @@ body:
         If you have a Bash (or bash-like) command or variation, you can input it
         here!
       placeholder: docker restart $(docker ps -q)
+  - type: markdown
+    attributes:
+      value: '---'
   - type: input
     id: requirements_linux
     attributes:
@@ -83,6 +89,9 @@ body:
         Please list all tools that your command uses, that are not installed by
         default.
       placeholder: git, docker, java
+  - type: markdown
+    attributes:
+      value: '---'
   - type: checkboxes
     id: agree
     attributes:
