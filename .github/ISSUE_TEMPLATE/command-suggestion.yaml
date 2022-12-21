@@ -1,0 +1,99 @@
+name: Command Suggestion
+description: Suggest a command for https://commander.sh
+title: '[Command Suggestion]: '
+labels:
+  - command
+  - suggestion
+assignees:
+  - MarvinJWendt
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thanks for taking your time to suggest a new command for
+        https://commander.sh!  
+
+        Please keep in mind that this issue is public and can be viewed by
+        everyone.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Please input a short, informative title for your command.
+      placeholder: Restart all docker containers
+    validations:
+      required: true
+  - type: input
+    id: related_command
+    attributes:
+      label: Title of related command
+      description: >-
+        If you add or fix a command to an already existing one, you can input
+        the title of the related command here.
+  - type: checkboxes
+    id: supported_platforms
+    attributes:
+      label: Supported Platforms
+      description: 'Please check every platform that your command can be used on. '
+      options:
+        - label: Linux
+          required: false
+        - label: macOS
+          required: false
+        - label: Windows
+          required: false
+  - type: input
+    id: command_powershell
+    attributes:
+      label: PowerShell Command
+      description: If you have a PowerShell command or variation, you can input it here!
+      placeholder: >-
+        docker ps | Select-Object -Skip 1 | ForEach-Object { docker restart
+        $_.ID }
+  - type: input
+    id: command_bash
+    attributes:
+      label: Bash Command
+      description: >-
+        If you have a Bash (or bash-like) command or variation, you can input it
+        here!
+      placeholder: docker restart $(docker ps -q)
+  - type: input
+    id: requirements_linux
+    attributes:
+      label: Linux Requirements
+      description: >-
+        Please list all tools that your command uses, that are not installed by
+        default. On Linux, we see every tool that is not a basic UNIX tool as
+        external.
+      placeholder: git, docker, java
+  - type: input
+    id: requirements_windows
+    attributes:
+      label: Windows Requirements
+      description: >-
+        Please list all tools that your command uses, that are not installed by
+        default..
+      placeholder: git, docker, java
+  - type: input
+    id: requirements_macos
+    attributes:
+      label: macOS Requirements
+      description: >-
+        Please list all tools that your command uses, that are not installed by
+        default.
+      placeholder: git, docker, java
+  - type: checkboxes
+    id: agree
+    attributes:
+      label: ToS
+      options:
+        - label: >-
+            I agree that my posted content in this form may be used on
+            https://commander.sh and affiliated social media accounts.
+          required: true
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
