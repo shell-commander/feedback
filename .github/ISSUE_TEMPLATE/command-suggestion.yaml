@@ -1,6 +1,6 @@
 name: Command Suggestion
 description: Suggest a command for https://commander.sh
-title: '[Command Suggestion]: '
+title: 'YOUR TITLE HERE'
 labels:
   - command
   - suggestion
@@ -92,8 +92,3 @@ body:
             I agree that my posted content in this form may be used on
             https://commander.sh and affiliated social media accounts.
           required: true
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://issue-forms-creator.netlify.app)
