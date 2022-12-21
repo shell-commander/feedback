@@ -1,0 +1,27 @@
+name: 🪲 Bug report
+description: Report a problem with https://commander.sh
+title: 'YOUR TITLE'
+labels:
+  - bug
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem.
+      placeholder: When I click on X, nothing happens.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Minimal Reproduction
+      description: Please provide steps to reproduce the problem.
+      placeholder: >-
+        Go to the site https://commander.sh/buggy/site and press the button with
+        the label "Bugged Button".
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Exception or Error
+      description: If you have any error logs in the console, you can input them here.
+      placeholder: 'error in line 1337: "whyDisNotWorking"  is not a function.'
